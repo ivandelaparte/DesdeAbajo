@@ -1,66 +1,161 @@
+:root{
+    --color-negro: #0b090a;
+    --color-gris-oscuro: #161a1d;
+    --color-rojo-oscuro: #660708;
+    --color-rojo: #a4161a;
+    --color-rojo-claro: #e5383b;
+    --color-gris-claro: #b1a7a6;
+    --color-blanco: #f5f3f4;
+    --color-facebook: #4267B2;
+    --color-instagram: #E1306C;
+    --color-youtube: #FF0000;
+}
 body{
-    background-color: #161a1d;
+    background-color: var(--color-gris-oscuro);
 }
 .navbar{
-    background-color: #a4161a!important;
+    background-color: var(--color-rojo)!important;
 }
 .logo{
     height: 3rem;
     z-index: 100;
 }
 .nav-link{
-    color: #f5f3f4 !important;
+    color: var(--color-blanco) !important;
     font-family: 'Staatliches', cursive !important;
 }
 .nav-item:hover{
-    background-color: #660708;
+    background-color: var(--color-rojo-oscuro);
 }
 .navbar-brand{
-    color: #f5f3f4 !important;
+    color: var(--color-blanco) !important;
     font-family: 'Staatliches', cursive !important;
+}
+.whatsapp-logo{
+    height: 3rem;
 }
 .container-fluid{
     padding-right: 0px;
     padding-left: 0px;
 }
-.empezar{
+#inicio{
     padding-top: 3rem;
 }
 .carousel-caption{
-    color: #f5f3f4 !important;
+    color: var(--color-blanco) !important;
     font-family: 'Staatliches', cursive !important;
     position: absolute !important;
     z-index: 10000000000 !important;
 }
+.redes .row{
+    background-color: var(--color-rojo-oscuro);
+    height: 6rem;
+}
+.redes-borde{
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--color-gris-oscuro);
+    border-radius: 100%;
+    transition-duration: 0.2s;
+}
+.facebook:hover{
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: var(--color-facebook);
+    border-radius: 100%;
+}
+.instagram:hover{
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: var(--color-instagram);
+    border-radius: 100%;
+    transition: 0.2s;
+}
+.youtube:hover{
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: var(--color-youtube);
+    border-radius: 100%;
+    transition: 0.2s;
+}
+.redes i{
+    color: var(--color-blanco);
+}
 
 #actividades{
-    background-color: #161a1d;
+    background-color: var(--color-gris-oscuro);
     min-height: 100vh;
 }
 #actividades h1{
-    color: #f5f3f4 !important;
+    color: var(--color-blanco) !important;
     font-family: 'Staatliches', cursive !important;
     text-align: center;
 }
 .actividad{
-    background-color: #e5383b!important;
+    background-color: var(--color-rojo-claro)!important;
 }
 .modal-content{
-    background-color: #161a1d!important;
+    background-color: var(--color-gris-oscuro)!important;
+}
+.modal-header{
+    border-bottom: 1px solid var(--color-negro);
+}
+.modal-footer{
+    border-top: 1px solid var(--color-negro);
+}
+
+#contacto input {
+	outline: none;
+    border: none;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+#contacto .wrap-input100{
+    height: 5rem;
+}
+#contacto .mensaje{
+    height: 15rem;
+}
+#contacto button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+#contacto select{
+	outline: none !important;
+	border: none;
+	background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+.wrap-input100 {
+    border: 1px solid var(--color-gris-claro);
+    border-radius: 10px;
+  }
+#contacto form{
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#contacto .interior{
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #encontranos{
-    background-color: #b1a7a6;
+    background-color: var(--color-gris-claro);
     height: 100vh;
 }
 #encontranos h1{
-    color: #0b090a !important;
+    color: var(--color-negro) !important;
     font-family: 'Staatliches', cursive !important;
     text-align: center;
 }
 
 #contacto{
-    background-color: #f5f3f4;
+    background-color: var(--color-gris-oscuro);
     height: 100vh;
 }
 .boton{
@@ -68,5 +163,12 @@ body{
     bottom: 1rem;
     left: 1rem;
     right: 1rem;
-  }
+}
+  .row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+
 
